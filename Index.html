@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menumiz HR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/font.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style-responsive.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/icon.css">
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-aside">
+            <img class="logo" src="./assets/img/logo.png" />
+            <a href="javascript:void(0)" class="hide-show-menu" onclick="hideShowMenu()"><img src="./assets/img/hide-show.svg" /></a>
+        </div>
+        <div class="header-right">
+            <div class="brand-icon">
+                <img src="./assets/img/menumiz-icon.svg" />
+            </div>
+            <div class="brand">Menumiz HR</div>
+            <div></div>
+            <div>
+                <div class="search">
+                    <img src="./assets/img/search.svg" />
+                    <input type="text" placeholder="Enter any keyword..." />
+                </div>
+                <div class="link">
+                    <a href="#">
+                        <div class="icon icon-setting"></div>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="#">
+                        <div class="icon icon-bell"></div>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="#">
+                        <img src="./assets/img/image.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="aside">
+            <ul>
+                <li>
+                    <div class="icon icon-dashboard"></div>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <div class="icon icon-calendar"></div>
+                    <a href="#">Calendar</a>
+                </li>
+                <li>
+                    <div class="icon icon-persons"></div>
+                    <a href="#">Recruitment</a>
+                </li>
+                <li>
+                    <div class="icon icon-person"></div>
+                    <a href="#">Employees</a>
+                </li>
+                <li class="active">
+                    <div class="icon icon-clock"></div>
+                    <a href="#">Leave</a>
+                </li>
+                <li>
+                    <div class="icon icon-organisation"></div>
+                    <a href="#">Organization</a>
+                </li>
+                <li>
+                    <div class="icon icon-billing"></div>
+                    <a href="#">Billings</a>
+                </li>
+                <li>
+                    <div class="icon icon-question"></div>
+                    <a href="#">Engagement</a>
+                </li>
+                <li>
+                    <div class="icon icon-desktop"></div>
+                    <a href="#">Development</a>
+                </li>
+                <li>
+                    <div class="icon icon-achivement"></div>
+                    <a href="#">Performance</a>
+                </li>
+                <li>
+                    <div class="icon icon-report"></div>
+                    <a href="#">Reports</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="nav">
+                <ul>
+                    <li class="active">Leave Management</li>
+                    <li>Leave Request</li>
+                    <li>Leave Types</li>
+                    <li>Leave Calendar</li>
+                    <li>Leave Report</li>
+                    <li>Leave Approver</li>
+                </ul>
+            </div>
+            <div class="container-title">
+                <h1>Dashboard</h1>
+            </div>
+            
+            <div class="row">
+                <div class="col-6 pd-0">
+                    <div class="container-card m-10">
+                        <div class="card-header">
+                            Heatmap
+                            <div class="right">
+                                <a href="#" class="dropdown">SICKDAY <span
+                                        class="icon icon-triangle-down right pd-l-25"></span></a>
+                                <a href="#" class="dropdown m-l-25">MARCH 2023 <span
+                                        class="icon icon-triangle-down right pd-l-25"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="row pd-t-10">
+                                <div class="days-bar">
+                                    <div><a href="#">Mon</a></div>
+                                    <div><a href="#">Tue</a></div>
+                                    <div><a href="#">Wed</a></div>
+                                    <div><a href="#">Thu</a></div>
+                                    <div class="active"><a href="#">Fri</a></div>
+                                    <div><a href="#">Sat</a></div>
+                                    <div><a href="#">Sun</a></div>
+                                </div>
+                            </div>
+                            <div class="row pd-t-15">
+                                <div class="col-3 text-center">
+                                    <div>Sick Leave</div>
+                                    <div class="percentage percentage-50 m-15">50%</div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <div>Annual Leave</div>
+                                    <div class="percentage percentage-25 m-15">30%</div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <div>Emergency Leave</div>
+                                    <div class="percentage percentage-25 m-15">20%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            Most popular day: Friday
+                        </div>
+                    </div>
+                </div><div class="col-6 pd-0">
+                    <div class="container-card m-10">
+                        <div class="card-header">
+                            Heatmap
+                            <div class="right">
+                                <a href="#" class="dropdown">SICKDAY <span
+                                        class="icon icon-triangle-down right pd-l-25"></span></a>
+                                <a href="#" class="dropdown m-l-25">MARCH 2023 <span
+                                        class="icon icon-triangle-down right pd-l-25"></span></a>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="row pd-t-10">
+                                <div class="days-bar">
+                                    <div><a href="#">Mon</a></div>
+                                    <div><a href="#">Tue</a></div>
+                                    <div><a href="#">Wed</a></div>
+                                    <div><a href="#">Thu</a></div>
+                                    <div class="active"><a href="#">Fri</a></div>
+                                    <div><a href="#">Sat</a></div>
+                                    <div><a href="#">Sun</a></div>
+                                </div>
+                            </div>
+                            <div class="row pd-t-15">
+                                <div class="col-3 text-center">
+                                    <div>Sick Leave</div>
+                                    <div class="percentage percentage-50 m-15">50%</div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <div>Annual Leave</div>
+                                    <div class="percentage percentage-25 m-15">30%</div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <div>Emergency Leave</div>
+                                    <div class="percentage percentage-25 m-15">20%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            Most popular day: Friday
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-title">
+                Leave Requests
+                <div class="right button-group">
+                    <button class="button active">List View</button>
+                    <button class="button">Month View</button>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-12 pd-0">
+                    <div class="container-card m-10">
+                        <div class="card-header no-border">
+                            <div class="pd-b-15">
+                                <div class="nav">
+                                    <ul>
+                                        <li class="active">All</li>
+                                        <li>Approved</li>
+                                        <li>Rejected</li>
+                                    </ul>
+                                </div>
+                                <div class="right m-25">
+                                    <a href="#" class="dropdown">
+                                        <span class="icon icon-triangle-left pd-l-25"></span>
+                                        <span class="text-bold text-white">March</span> 2023
+                                    </a>
+                                    <a href="#" class="dropdown"><span
+                                            class="icon icon-calendar pd-l-25 m-l-15"></span><span
+                                            class="icon icon-triangle-down pd-l-25"></span></a>
+                                    <a href="#" class="dropdown"><span
+                                            class="icon icon-triangle-right pd-l-25 p-t-15"></span></a>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="card-content">
+                            <table id="userTable" class="table m-t-25">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <input type="checkbox" id="checkboxAll" value="all" name="user['all']" />
+                                            <label class="checkbox" for="checkboxAll"></label>
+                                            <span class="m-l-15">#</span>
+                                        </th>
+                                        <th>NAME</th>
+                                        <th>PERIOD</th>
+                                        <th>DAY(S)</th>
+                                        <th>LEAVE TYPE</th>
+                                        <th>ACTIONS</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox" value="1" name="user[1]" />
+                                            <label class="checkbox" for="checkbox"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox2" value="2" name="user[1]" />
+                                            <label class="checkbox" for="checkbox2"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox3" value="3" name="user[1]" />
+                                            <label class="checkbox" for="checkbox3"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox4" value="4" name="user[1]" />
+                                            <label class="checkbox" for="checkbox4"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox5" value="5" name="user[1]" />
+                                            <label class="checkbox" for="checkbox5"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox6" value="6" name="user[1]" />
+                                            <label class="checkbox" for="checkbox6"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox7" value="7" name="user[1]" />
+                                            <label class="checkbox" for="checkbox7"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox8" value="8" name="user[1]" />
+                                            <label class="checkbox" for="checkbox8"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox9" value="9" name="user[1]" />
+                                            <label class="checkbox" for="checkbox9"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox10" value="10" name="user[1]" />
+                                            <label class="checkbox" for="checkbox10"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox11" value="11" name="user[1]" />
+                                            <label class="checkbox" for="checkbox11"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox12" value="12" name="user[1]" />
+                                            <label class="checkbox" for="checkbox12"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="checkbox13" value="13" name="user[1]" />
+                                            <label class="checkbox" for="checkbox13"></label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="text-white">
+                                                <img class="avatar-round w-50 left" src="./assets/img/image.png">
+                                                <div class="left m-10">Mark Jacobs</div>
+                                            </a>
+                                        </td>
+                                        <td>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</td>
+                                        <td>1.0</td>
+                                        <td>Annual Leave</td>
+                                        <td>
+                                            <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                                            <a href="javascript:void(0)" class="button button-primary m-5" onclick="showModal(this)">APPROVE</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <div class="icon icon-arrow-right"></div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bulk-container">
+            <div>TOTAL: <span id="totalSelected"></span></div>
+            <div>
+                <a href="javascript:void(0)" class="button button-default button-hover-danger m-5">REJECT</a>
+                <a href="javascriot:void(0)" onclick="showModal(this)" class="button button-primary m-5">APPROVE</a>
+            </div>
+        </div>
+        <div class="backdrop">
+            <div class="modal-card">
+                <div class="modal-header">
+                    Confirmation
+                    <div class="link right">
+                        <a href="javascriot:void(0)" onclick="showModal(this)">
+                            <div class="icon icon-close"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-content">
+                    Are you sure want to approved Mark Jacobs sick leave for 1 day?
+                </div>
+                <div class="modal-footer">
+                    <a href="javascriot:void(0)" onclick="showModal(this)" class="button left button-default m-5">NO</a>
+                    <a href="javascriot:void(0)" onclick="showModal(this)"
+                        class="button button-primary right m-5">YES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>

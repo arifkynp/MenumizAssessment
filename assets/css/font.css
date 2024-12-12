@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Urbanist";
+    font-weight: normal;
+    src: url('../fonts/Urbanist/Urbanist.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Urbanist";
+    font-weight: normal;
+    src: url('../fonts/Urbanist/Urbanist-Latin.woff2') format('woff2');
+}
+
+body, h1, h2, h3, h4, h5, h6, a, p {
+    font-family: "Urbanist", serif;
+}

@@ -1,0 +1,80 @@
+@media screen and (max-width: 1000px) {
+    .table>tbody>tr>td>a.button{
+        margin: 10px;
+        width: auto;
+        display: flex;
+        margin-top: 10px;
+    }
+    .days-bar {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        width: 100%;
+        display: initial;
+        position: absolute;
+    }
+
+    .col-3 {
+        float: none;
+        text-align: center;
+        display: initial;
+    }
+
+    .percentage {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .brand-icon, .brand {
+        display: none;
+    }
+
+    .content > .nav > ul {
+        display: flex;
+    }
+}
+
+@media (max-width: 900px) {
+    .right {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aside {
+        display: none;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .content > .nav > ul > li {
+        list-style: none;
+        margin: 0 10px;
+        padding: 25px 15px;
+        color: #898989;
+        float: none;
+    }
+
+    .content > .nav > ul {
+        flex-direction: column;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600) {
+
+    .content > .nav > ul > li {
+        list-style: none;
+        margin: 0 10px;
+        padding: 25px 15px;
+        color: #898989;
+        float: none;
+    }
+}
